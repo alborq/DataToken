@@ -1,0 +1,10 @@
+services:
+    alborq.data_token:
+        class: Alborq\DataTokenBundle\Service\DataTokenService
+        arguments: [@doctrine.orm.entity_manager]
+
+    alborq.data_token_converter:
+        class: Alborq\DataTokenBundle\Request\ParamConverter\DataTokenConverter
+        arguments: [@alborq.data_token]
+        tags:
+            - { name: request.param_converter, priority: -2, converter: alborq.data_token_converter }
