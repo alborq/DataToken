@@ -19,7 +19,5 @@
     },
     "autoload": {
         "psr-0": { "Alborq\\DataTokenBundle": "" }
-    },
-
-    "target-dir": "alborq/DataTokenBundle"
+    }
 }
