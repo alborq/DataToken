@@ -1,0 +1,25 @@
+{
+    "name": "alborq/DataTokenBundle",
+    "description": "Token système for store data in db",
+    "homepage": "http://github.com/alborq/DataTokenBundle",
+    "license": "CeCILL",
+    "authors": [
+        {
+            "name": "Alborq",
+            "role": "Developper",
+            "homepage": "http://github.com/alborq"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/symfony-fr"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">2.0"
+    },
+    "autoload": {
+        "psr-0": { "alborq\\DataTokenBundle": "" }
+    },
+
+    "target-dir": "alborq/DataTokenBundle"
+}
