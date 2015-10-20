@@ -58,7 +58,7 @@ class DataTokenService {
         return new token($token);
     }
 
-    public function create($data, $type, \DateInterval $interval = null){
+    public function create($data, $type, \DateInterval $interval){
         $token = new DataTokenEntity();
         $token  ->setData($this->serialize($data))
                 ->setUnserializedData($data)
