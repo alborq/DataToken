@@ -7,7 +7,6 @@ class DataTokenEntityRepository extends EntityRepository {
 
     public function findOutdatedToken()
     {
-        $now = new \DateTime();
         $qb = $this->createQueryBuilder('d');
 
         return $qb->where($qb->expr()->lte('d.dateEnd','CURRENT_TIMESTAMP()'))
